@@ -24,7 +24,7 @@ public class Treino {
         }
 
         System.out.println(saida);*/
-        System.out.print("Digite a hora inicial do jogo: ");
+        /* System.out.print("Digite a hora inicial do jogo: ");
         int hInicio = ler.nextInt();
 
         System.out.print("Digite a hora final do jogo: ");
@@ -39,12 +39,22 @@ public class Treino {
             duracao = hFinal - hInicio;
         }
 
-        System.out.printf("O jogo durou %d horas" ,  duracao);
+        System.out.printf("O jogo durou %d horas" ,  duracao);*/
 
+        System.out.print("Informe um valor inteiro ou decimal: ");
+        double valor =  ler.nextDouble();
+        String intervalo = "Fora de Intervalo" ;
 
+        if ( valor >= 0 && valor <= 25 ){
+            intervalo = " Intervalo [0, 25]";
+        } else
+            if ( valor > 25 && valor <=50 ){
+                intervalo = " Intervalo (25, 50]";
+        } else
+            if ( valor > 75 && valor <= 100){
+                intervalo = " Intervalo (75, 100]";
+            }
 
-
-
-
+        System.out.println(intervalo);
     }
 }
