@@ -57,7 +57,7 @@ public class Treino {
 
         System.out.println(intervalo);*/
 
-        System.out.println("Informe  dois valores com casa decimal: ");
+        /* System.out.println("Informe  dois valores com casa decimal: ");
         double eixoX =  ler.nextDouble();
         double eixoY =  ler.nextDouble();
         String posicao = "Origem";
@@ -76,5 +76,21 @@ public class Treino {
                 }
 
         System.out.println(posicao);
-    }
+
+         */
+        String  senha = " ";
+
+        do {
+            System.out.print("Digite a senha de acesso: ");
+            senha = ler.next();
+
+            if (senha.equals("2ff45")) {
+                System.out.println("Acesso Permitido");
+                break;
+            } else {
+                System.out.println("Senha Inválida");
+            }
+        } while ( senha != "2002");
+
+        }
 }
