@@ -41,7 +41,7 @@ public class Treino {
 
         System.out.printf("O jogo durou %d horas" ,  duracao);*/
 
-        System.out.print("Informe um valor inteiro ou decimal: ");
+       /* System.out.print("Informe um valor inteiro ou decimal: ");
         double valor =  ler.nextDouble();
         String intervalo = "Fora de Intervalo" ;
 
@@ -55,6 +55,26 @@ public class Treino {
                 intervalo = " Intervalo (75, 100]";
             }
 
-        System.out.println(intervalo);
+        System.out.println(intervalo);*/
+
+        System.out.println("Informe  dois valores com casa decimal: ");
+        double eixoX =  ler.nextDouble();
+        double eixoY =  ler.nextDouble();
+        String posicao = "Origem";
+
+        if ( eixoX > 0  && eixoY > 0){
+            posicao = "Q1";
+        } else
+        if ( eixoX < 0  && eixoY > 0){
+            posicao = "Q2";
+        } else
+            if( eixoX < 0 && eixoY < 0) {
+                posicao = "Q3";
+            } else
+                if( eixoX > 0 && eixoY < 0){
+                    posicao = "Q4";
+                }
+
+        System.out.println(posicao);
     }
 }
